@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vishal Uttam Mane | Software Engineer</title>
+
+<meta name="description" content="Vishal Uttam Mane – Software Engineer, Tech Influencer & Entrepreneur. Writing about AI, system design, and modern software development.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* GLOBAL */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  animation: fadeUp 1s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: #facc15;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  border: 4px solid #facc15;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 26px;
+  background: #facc15;
+  color: #000;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(250,204,21,0.3);
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.stat {
+  background: #111827;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeUp 1s ease;
+}
+
+.stat h2 {
+  color: #facc15;
+  font-size: 2rem;
+}
+
+.stat p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* SECTION */
+section {
+  margin-top: 100px;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  color: #facc15;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 120px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .stats { grid-template-columns: repeat(2,1fr); }
+  .services { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Discover My <span>Tech Space</span></h1>
+      <p>
+        I’m <strong>Vishal Uttam Mane</strong>, a Software Engineer, Tech Influencer,
+        and Entrepreneur focused on AI, system design, and building scalable systems.
+      </p>
+      <a class="btn" href="#services">Explore More</a>
+    </div>
+
+    <img src="profile.jpg" alt="Vishal Uttam Mane">
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><h2>8+</h2><p>Years Learning & Building</p></div>
+    <div class="stat"><h2>50+</h2><p>Articles & Tutorials</p></div>
+    <div class="stat"><h2>100+</h2><p>Projects & Experiments</p></div>
+    <div class="stat"><h2>∞</h2><p>Curiosity & Growth</p></div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>What I Do</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Software Engineering</h3>
+        <p>
+          Building reliable, scalable systems with strong fundamentals and clean architecture.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI & System Design</h3>
+        <p>
+          Writing and teaching how AI is changing software development and engineering roles.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Tech Writing & Influence</h3>
+        <p>
+          Sharing practical, future-focused insights on Medium, Blogger, and GitHub.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Vishal Uttam Mane · Built with GitHub Pages
+</footer>
+
+</body>
+</html>
