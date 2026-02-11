@@ -73,7 +73,6 @@ body {
     justify-content: center;
 }
 
-
 .about-center img {
     width: 180px;
     /* was 120px */
@@ -157,7 +156,6 @@ body {
     opacity: 1;
     transform: scale(1);
 }
-
 
 .skill-card.hide {
     opacity: 0;
@@ -489,29 +487,174 @@ body {
 
 /* hero title */
 .hero-title {
-  font-size: 3.2rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .hero-title .intro {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 600;        /* ✅ bold but refined */
-  color: #e5e7eb;          /* light gray / near white */
-  letter-spacing: 0.5px;  /* subtle authority */
-  margin-bottom: 6px;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    /* ✅ bold but refined */
+    color: #e5e7eb;
+    /* light gray / near white */
+    letter-spacing: 0.5px;
+    /* subtle authority */
+    margin-bottom: 6px;
 }
 
 .hero-title .name {
-  font-weight: 800;        /* strong personal branding */
-  color: #ffffff;
+    font-weight: 800;
+    /* strong personal branding */
+    color: #ffffff;
 }
 
 .hero-title .highlight {
-  color: #facc15;          /* yellow */
+    color: #facc15;
+    /* yellow */
 }
 
 .hero-title .highlight {
-  color: #facc15; /* yellow */
+    color: #facc15;
+    /* yellow */
+}
+
+
+/* global css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0f1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ✅ Prevent Horizontal Scroll (Very Important) */
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ✅  HERO Responsive Fix */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+    /* allows stacking */
+}
+
+
+.hero-left,
+.hero-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+/* ✅ ABOUT Section Fix */
+.about {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* important */
+}
+
+.about-left,
+.about-center,
+.about-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* ✅ Skills & Books Grid (If Not Already Using This) */
+.skills-grid,
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ✅5 MOBILE FIX (Main Part) */
+
+@media (max-width: 768px) {
+
+
+    .hero {
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+
+    .hero-right {
+        margin-top: 40px;
+    }
+
+
+    .about {
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+
+    .about-right {
+        margin-top: 30px;
+    }
+
+
+    .skills,
+    .books,
+    .contact {
+        padding: 80px 5%;
+    }
+
+
+    .tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* LARGE DESKTOP CONTROL (Stops Over Stretching) */
+@media (min-width: 1400px) {
+
+    .hero,
+    .about,
+    .skills,
+    .books,
+    .contact {
+        max-width: 1400px;
+        margin: auto;
+    }
 }
